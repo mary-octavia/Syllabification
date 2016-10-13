@@ -15,28 +15,35 @@ Using Machine Learning. TSD 2013: 450-456
 # Author: Octavia-Maria Sulea
 # License: BSD 3
 
-voc="aeiouy"
-cons="bcdfghjklmnprstvxz"
-liquid="lr"
-stop="bcdfghptv"
-cc_o=["ch", "gh", "gv", "cv", "sp", "sc", "st", "sf", "zb", "zg", "zd", "zv", "jg", "jd", "sm", "sn", "sl", "zm", "zl", "jn", "tr", "cl", "cr", "pl", "pr", "dr", "gl", "gr", "br", "bl", "fl", "fr", "vl", "vr", "hr", "hl", "ml", "mr"]
-ccc_o=["spl", "spr", "str", "jgh", "zdr", "scl", "scr", "zgl", "zgr", "sfr"]
-cc_e=["sc", "sf", "sl", "sp"]
-dif=["ea", "oa", "ia", "ua", "iu", "uu", "ie", "ii"]
-trif=["eoa", "eai", "eau", "iau"]
-hiat=["aa","au", "ae", "ie", "ai", "ee", "oe", "oo", "yu"]
+voc = "aeiouy"
+cons = "bcdfghjklmnprstvxz"
+liquid = "lr"
+stop = "bcdfghptv"
+cc_o = ["ch", "gh", "gv", "cv", "sp", "sc", "st", "sf", "zb", "zg", 
+    "zd", "zv", "jg", "jd", "sm", "sn", "sl", "zm", "zl", "jn", "tr", 
+    "cl", "cr", "pl", "pr", "dr", "gl", "gr", "br", "bl", "fl", "fr", 
+    "vl", "vr", "hr", "hl", "ml", "mr"]
+ccc_o = ["spl", "spr", "str", "jgh", "zdr", "scl", "scr", "zgl", "zgr", "sfr"]
+cc_e = ["sc", "sf", "sl", "sp"]
+dif = ["ea", "oa", "ia", "ua", "iu", "uu", "ie", "ii"]
+trif = ["eoa", "eai", "eau", "iau"]
+hiat = ["aa","au", "ae", "ie", "ai", "ee", "oe", "oo", "yu"]
 
 # use this set of constants for diacritics
-# voc="aeiouăîâ"
-# cons="bcdfghjklmnprsștțvxz"
-# liquid="lr"
-# stop="bcdfghptv"
-# cc_o=["ch", "gh", "sp", "sc", "st", "sf", "zb", "zg", "zd", "zv", "șk", "șp", "șt", "șf", "șv", "jg", "jd", "sm", "sn", "sl", "șm", "șn", "șl", "zm", "zl", "jn", "tr", "cl", "cr", "pl", "pr", "dr", "gl", "gr", "br", "bl", "fl", "fr", "vl", "vr", "hr", "hl", "ml", "mr"]
-# ccc_o=["spl", "spr", "șpl", "șpr", "str", "ștr", "jgh", "zdr", "scl", "scr", "zgl", "zgr", "sfr"]
-# cc_e=["sc", "sf", "sl", "sp", "tr"]
-# dif=["ea", "oa", "ia", "ua", "uă" "iu", "uu", "ie"]
-# trif=["eoa", "eai", "eau", "iau"]
-# hiat=["aa", "au", "ae","ie", "ai", "ee", "oe"]
+# voc = "aeiouăîâ"
+# cons = "bcdfghjklmnprsștțvxz"
+# liquid = "lr"
+# stop = "bcdfghptv"
+# cc_o = ["ch", "gh", "sp", "sc", "st", "sf", "zb", "zg", "zd", "zv", "șk", "șp", 
+    # "șt", "șf", "șv", "jg", "jd", "sm", "sn", "sl", "șm", "șn", "șl", "zm", "zl", 
+    # "jn", "tr", "cl", "cr", "pl", "pr", "dr", "gl", "gr", "br", "bl", "fl", "fr", 
+    # "vl", "vr", "hr", "hl", "ml", "mr"]
+# ccc_o = ["spl", "spr", "șpl", "șpr", "str", "ștr", "jgh", "zdr", "scl", "scr", "zgl", 
+    # "zgr", "sfr"]
+# cc_e = ["sc", "sf", "sl", "sp", "tr"]
+# dif = ["ea", "oa", "ia", "ua", "uă" "iu", "uu", "ie"]
+# trif = ["eoa", "eai", "eau", "iau"]
+# hiat = ["aa", "au", "ae","ie", "ai", "ee", "oe"]
 
 
 def ccv(cuv, i):
